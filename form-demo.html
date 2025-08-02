@@ -19,13 +19,14 @@
       <br><br>
       <label for="feeling">How are you feeling?</label>
       <span>:(</span>
-      <input id="feeling" name="feeling" type="range" min="0" max="2" span="0.5">
+      <input id="feeling" name="feeling" type="range" min="0" max="10" span="0.5">
       <span>:)</span>
       <br><br>
       <section class="colors">
         <span>What are your favorite colors? (Multi-select pls)</span>
         <br>
-        <!--For a checkbox id and value are the same but name is the class value of the section, like how the name is colors and not pink, black, etc.-->
+        <!--For a checkbox id and value are the same but name is usually the class value of the section (or other thing that makes sense
+        just has to be the same between options), like how the name is colors and not pink, black, etc.-->
         <input id="pink" name="colors" value="pink" type="checkbox">
         <label for="pink">Pink</label>
         <br>
@@ -35,6 +36,16 @@
         <input id="other" name="colors" value="other" type="checkbox">
         <label for="other">Other</label>
         <p>Sorry I'm too lazy to write more, you get the gist...</p>
+      </section>
+      <section class="math">
+        <span>Can you do my math homework?</span>
+        <br>
+        <ol>
+          <input type="radio" id="yes" name="ans" value="yes">
+          <li><label for="yes">Yes</label></li>
+          <input type="radio" id="one" name="ans" value="one">
+          <li><label for="one">One</label></li>
+        </ol>
       </section>
       <br><br>
     </form>
