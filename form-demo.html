@@ -6,21 +6,36 @@
   <body>
     <h1>Form practice -caffrey</h1>
     <form action="/results.html" method="POST"> <!--Imputs saved in results.html I think...-->
-      <h2>This is a heading inside the form</h2>
+      <h2>This is a heading inside the form--fill it out</h2>
+      <hr>
       <label for="username">Name:</label>
       <input type="text" name="username" id="username" value = "Claire"> <!-- This one is prefilled...-->
-      <hr>
+      <br>
       <label for="password">Password:</label>
       <input type="password" name="password" id="password">
-      <hr>
+      <br>
       <label for="age">Insert age</label>
       <input id="age" name="age" type="number" step="1"> <!-- number field with arrows that go up by 1, hence the value of step-->
-      <hr>
+      <br>
       <label for="feeling">How are you feeling?</label>
       <span>:(</span>
       <input id="feeling" name="feeling" type="range" min="0" max="2" span="0.5">
       <span>:)</span>
-      <hr>
+      <br>
+      <section class="colors">
+        <span>What are your favorite colors? (Multi-select pls)</span>
+        <br>
+        <input id="pink" name="colors" value="pink" type="checkbox">
+        <label for="pink">Pink</label>
+        <br>
+        <input id="black" name="colors" value="black" type="checkbox">
+        <label for="black">Black</label>
+        <br>
+        <input id="other" name="colors" value="other" type="checkbox">
+        <label for="other">Other</label>
+        <p>Sorry I'm too lazy to write more, you get the gist...</p>
+      </section>
+      <br>
     </form>
   </body>
 </html>
