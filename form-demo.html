@@ -8,9 +8,11 @@
     <form action="/results.html" method="POST"> <!--Imputs saved in results.html I think...-->
       <h2>This is a heading inside the form</h2>
       <label for="username">Username</label>
-      <input type="text" name="txtfield0" id="username">
+      <input type="text" name="username" id="username">
       <label for="password">Password</label>
-      <input type="text" name="txtfield1" value="pre-filled..." id="password"> <!-- This one is prefilled...-->
+      <input type="text" name="password" value="pre-filled..." id="password"> <!-- This one is prefilled...-->
+      <label for="age">Insert age</label>
+      <input id="age" name="age" type="number" step="1"> <!-- number field with arrows that go up by 1, hence the value of step-->
     </form>
   </body>
 </html>
